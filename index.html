@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container mx-auto px-4 md:px-2">
+            <div class="grid grid-cols-2 gap-4">
+                <!--Macbook Image -->
+                <div class="p-5  m-5">
+                    <div class="h-96 w-full">
+                        <img src="images/mac.png" id="art" class="" alt="" />
+                    </div>
+                </div>
+                <!-- Description & Configuration-->
+                <div class="mt-10 max-w-lg mx-auto">
+                    <h1 id="desc" class="text-4xl font-semibold text-gray-800">
+                        Customize your Blue 24-inch
+                        iMac with Apple M1 chip
+                    </h1>
+                    <p class="text-base font-normal pt-5" id="price">
+                        Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiently cores, 7-core GPU, and
+                        16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic
+                        Mouse Magic Keyboard - US English
+                    </p>
+
+                    <!-- Memory Option Start-->
+                    <div class="pt-10">
+                        <h4 class="font-bold mb-1">Memory</h4>
+                        <button class="
+                  p-2
+                  m-1
+                  border border-gray-400
+                  shadow
+                  hover:bg-black
+                  hover:text-white
+                  focus:ring-2 focus:ring-gray-600
+                  rounded
+                " id="8gb-memory">
+                            8GB unified memory
+                        </button>
+                        <button class="
+                  p-2
+                  m-1
+                  border border-gray-400
+                  shadow
+                  hover:bg-black
+                  hover:text-white
+                  focus:ring-2 focus:ring-gray-600
+                  rounded
+                " id="16gb-memory">
+                            16GB unified memory
+                        </button>
+                    </div>
+                    <!-- Memory Option End -->
+
+                    <!-- Storage Option Start-->
+                    <div class="pt-10">
+                        <h4 class="font-bold mb-1">Storage</h4>
+                        <button class="
+                  p-2
+                  m-1
+                  border border-gray-400
+                  shadow
+                  hover:bg-black
+                  hover:text-white
+                  focus:ring-2 focus:ring-gray-600
+                  rounded
+                " id="256gb-ssd">
+                            256GB SSD storage
+                        </button>
+                        <button class="
+                  p-2
+                  m-1
+                  border border-gray-400
+                  shadow
+                  hover:bg-black
+                  hover:text-white
+                  focus:ring-2 focus:ring-gray-600
+                  rounded
+                " id="512gb-ssd">
+                            512GB SSD storage
+                        </button>
+                        <button class="
+                  p-2
+                  m-1
+                  border border-gray-400
+                  shadow
+                  hover:bg-black
+                  hover:text-white
+                  focus:ring-2 focus:ring-gray-600
+                  rounded
+                " id="1tb-ssd">
+                            1TB SSD storage
+                        </button>
+                    </div>
+                    <!-- Storage Option End-->
+
+                    <!-- Choose your delivery Option  Start-->
+                    <div class="pt-10 mb-10">
+                        <h4 class="font-bold mb-1">Choose your delivery option </h4>
+                        <button class="
+                  p-2
+                  m-1
+                  text-sm
+                  border border-gray-400
+                  shadow
+                  hover:bg-black
+                  hover:text-white
+                  focus:ring-2 focus:ring-gray-600
+                  rounded
+                " id="free-charge">
+                            Friday, Aug 25 FREE Prime Delivery
+                        </button>
+                        <button class="
+                  p-2
+                  m-1
+                  text-sm
+                  border border-gray-400
+                  shadow
+                  hover:bg-black
+                  hover:text-white
+                  focus:ring-2 focus:ring-gray-600
+                  rounded
+                " id="delivery-charge">
+                            Friday, Aug 21 Delivery Charge $20
+                        </button>
+                    </div>
+                    <!-- Choose your delivery Option  End-->
+
+                    <!-- Price Calculation Option Start -->
+                    <div class="flex justify-between text-lg font-semibold py-2">
+                        <h5>Best Price </h5>
+                        <h5>$<span id="best-price">1299</span></h5>
+
+                    </div>
+                    <hr class="">
+                    <div class="flex justify-between text-lg font-semibold py-2">
+                        <h5>Extra Memory Cost </h5>
+                        <h5>$<span id="extra-memory-cost">0</span></h5>
+
+                    </div>
+                    <hr class="">
+                    <div class="flex justify-between text-lg font-semibold py-2">
+                        <h5>Extra Storage Cost </h5>
+                        <h5>$<span id="extra-storage-cost">0</span></h5>
+
+                    </div>
+                    <hr class="">
+                    <div class="flex justify-between text-lg font-semibold py-2">
+                        <h5>Delivery charge </h5>
+                        <h5>$<span id="extra-delivery-cost">0</span></h5>
+
+                    </div>
+                    <hr class="border-1 border-black">
+                    <div class="flex justify-between text-lg font-semibold py-2">
+                        <h5>Total Price </h5>
+                        <h5>$<span id="total-price">1299</span></h5>
+
+                    </div>
+                    <hr class="">
+                    <!-- Price Calculation Option End -->
+
+                    <!-- Promo Code Option Start -->
+                    <div class="text-2xl py-2 mt-10">
+                        <h5 class="text-lg font-semibold">Add Promo code</h5>
+                        <div class="flex">
+                            <input class="border border-gray-200" id="promo-code-input" type="text">
+                            <button id="apply-button" class="
+                    bg-red-600
+                    text-base
+                    text-white
+                    px-4
+                    rounded
+                    applybutton
+                    ">
+                                Apply
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Promo Code Option  End -->
+
+            <!-- Updated Discount total Price Start -->
+            <div class="m-10 ">
+                <hr class="border-1 border-black">
+                <h5 class="text-center text-3xl font-semibold mt-2">Total: $<span id="total">1299</span></h5>
+
+            </div>
+            <!-- Updated Discount total Price End -->
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
